@@ -10,7 +10,7 @@
             "name": "Debug reg",
             "preLaunchTask": "build-reg",
             "program": "${workspaceFolder}/zig-out/bin/reg",
-            "args": [],
+            "args": ["--debug", "test"],
             "cwd": "${workspaceFolder}",
         },
         {

@@ -6,7 +6,7 @@ pub fn build(builder: *std.Build) void {
 
     const exe = builder.addExecutable(.{
         .name = "reg",
-        .root_source_file = .{ .path = "src/main.zig" },
+        .root_source_file = .{ .path = "src/cli.zig" },
         .target = target,
         .optimize = optimize,
     });
@@ -20,7 +20,7 @@ pub fn build(builder: *std.Build) void {
     exe.install();
 
     const exe_tests = builder.addTest(.{
-        .root_source_file = .{ .path = "src/main.zig" },
+        .root_source_file = .{ .path = "src/cli.zig" },
         .target = target,
         .optimize = optimize,
     });
