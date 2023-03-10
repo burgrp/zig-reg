@@ -1,3 +1,6 @@
 [submodule "vendor/zig-clap"]
 	path = vendor/zig-clap
 	url = https://github.com/Hejsil/zig-clap.git
+[submodule "vendor/zig-paho-mqtt"]
+	path = vendor/zig-paho-mqtt
+	url = git@github.com:burgrp/zig-paho-mqtt.git
