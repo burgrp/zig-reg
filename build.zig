@@ -17,7 +17,7 @@ pub fn build(builder: *std.Build) void {
 
     exe.addModule("clap", module);
 
-    exe.install();
+    builder.installArtifact(exe);
 
     const exe_tests = builder.addTest(.{
         .root_source_file = .{ .path = "src/cli.zig" },
